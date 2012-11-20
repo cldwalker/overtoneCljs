@@ -3,7 +3,7 @@
             [overtoneinterface.models.dubstep :as dubstep])
   (:use [noir.core :only [defpage]]
         [overtone.live]
-        [overtone.inst.sampled-piano]
+        #_[overtone.inst.sampled-piano]
         [noir.fetch.remotes :only [defremote]]
         [hiccup.core :only [html]]))
 
@@ -14,7 +14,7 @@
            [:div#notes]
            [:div#piano]))
 
-(defremote play-note [n]
+#_(defremote play-note [n]
   (sampled-piano n))
 
 (defremote start-dub []

@@ -1,7 +1,7 @@
 (ns overtoneinterface.models.dubstep 
   (:use overtone.live)
   (:use [overtone.at-at :only [every]])
-  (:use overtone.inst.sampled-piano))
+  #_(:use overtone.inst.sampled-piano))
 
 (defn later [t]
     (+ (now) t))
